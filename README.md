@@ -1,11 +1,10 @@
 # epylectron - Quickstarter for Python + Electron
 
 This repository contains a quickstarter project for developing an [Electron][]
-desktop application with [Python][] as its backend.
+desktop application with [Python][] as its backend. Getting everything
+to run is as simple as using `make run`.
 
-    $ git clone https://github.com/NiklasRosenstein/epylectron.git
-    $ cd epylectron
-    $ npm install --save .
+    $ git clone https://github.com/NiklasRosenstein/epylectron.git && cd epylectron
     $ make run
 
 ![Screenshot](https://i.imgur.com/jnJVQ1p.png)

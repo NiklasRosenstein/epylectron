@@ -1,13 +1,16 @@
 var electron = require('electron')
 var child_process = require('child_process')
-var request_promise = require('request-promise')
 var mainWindow = null
 var pythonRuntime = null
 var mainAddr = 'http://127.0.0.1:5000';
 
 electron.app.on('ready', function() {
   // Create the Python process.
-  pythonRuntime = child_process.spawn('python', ['./backend/main.py'], {
+  var pythonBin = '.pyenv/bin/python'
+  if (process.platform.toLowerCase().startsWith('win')) {
+    pythonBin = '.pyenv\\Scripts\\python'
+  }
+  pythonRuntime = child_process.spawn(pythonBin, ['./backend/main.py'], {
     stdio: 'inherit',
     detached: false
   })
