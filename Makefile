@@ -15,4 +15,4 @@ node_modules:
 	npm install --save .
 
 run: pyenv node_modules
-	node_modules\electron-prebuilt\dist\electron .
+	node_modules/electron-prebuilt/dist/electron .
