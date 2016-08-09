@@ -1,0 +1,9 @@
+{
+	"name": "epylectron",
+	"version": "0.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-prebuilt": "*",
+    "coffee-script": "*"
+  }
+}
